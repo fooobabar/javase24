@@ -24,14 +24,11 @@ public class UserDaoImpl implements UserDao {
 	}
 	
 	@Test
-	public void testUsermethod(){
-		User u1 = new User();
-		u1.set("zhangsan", "123");
-		UserDao ud = new UserDaoImpl();
-		ud.addUser(u1);  
-		
+	public void testUsermethod(){ 
+		UserDao ud = new UserDaoImpl(); 
 		System.out.println(ud.findUserByName("zhangsan"));
 		System.out.println(ud.checkUserIfExist("zhangsan"));
+		System.out.println(ud.checkUserIfExist("lisi"));
 	}
 
 }

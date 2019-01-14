@@ -1,5 +1,11 @@
 package cn.edu360.javase24.day07.construct;
 
+/*
+ * new 一个对象的执行顺序：
+ * 1. 静态代码块，包括静态成员；多个则从上往下顺序执行
+ * 2. 普通初始化代码块，多个则从上往下顺序执行
+ * 3. 构造方法
+ */
 public class OrderDatabase {
 	
 	public static String orderVersion = "500";
