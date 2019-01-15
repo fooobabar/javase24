@@ -20,20 +20,20 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public String regist(String name, String pwd1, String pwd2) {
-		//¼ì²éÃÜÂëÊÇ·ñÒ»ÖÂ£¬Èç¹û²»Ò»ÖÂ£¬Ö±½Ó·µ»Ø1
+		//æ£€æŸ¥å¯†ç æ˜¯å¦ä¸€è‡´ï¼Œå¦‚æœä¸ä¸€è‡´ï¼Œç›´æ¥è¿”å›1
 		if(!pwd1.equals(pwd2)){
 			return "1";
 		}
 		
-		//µ÷ÓÃdao²ã£¬²é¿´ÓÃ»§ÊÇ·ñ´æÔÚ
+		//è°ƒç”¨daoå±‚ï¼ŒæŸ¥çœ‹ç”¨æˆ·æ˜¯å¦å­˜åœ¨
 		boolean ifExist = userDao.checkUserIfExist(name);
 		
-		//Èç¹ûÓÃ»§´æÔÚ£¬·µ»Ø2
+		//å¦‚æœç”¨æˆ·å­˜åœ¨ï¼Œè¿”å›2
 		if(ifExist){
 			return "2";
 		}
 		
-		//½«ÓÃ»§ĞÅÏ¢´æ´¢µ½Êı¾İ¿âÖĞ
+		//å°†ç”¨æˆ·ä¿¡æ¯å­˜å‚¨åˆ°æ•°æ®åº“ä¸­
 		User u = new User();
 		u.set(name, pwd1);
 		userDao.addUser(u);

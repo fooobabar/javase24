@@ -2,8 +2,8 @@ package cn.edu360.javase24.day05.shop;
 
 import java.util.ArrayList;
 /**
- * 1.±£´æËùÓĞµÄÉÌÆ·Êı¾İ
- * 2.Ìá¹©²Ù×÷ÕâĞ©Êı¾İµÄ·½·¨
+ * 1.ä¿å­˜æ‰€æœ‰çš„å•†å“æ•°æ®
+ * 2.æä¾›æ“ä½œè¿™äº›æ•°æ®çš„æ–¹æ³•
  * @author iiii
  *
  */
@@ -11,7 +11,7 @@ public class ProductManagement {
 	private ArrayList<Product> pdts = new ArrayList<>();
 	
 	/**
-	 * Ìí¼ÓÉÌÆ·Êı¾İ
+	 * æ·»åŠ å•†å“æ•°æ®
 	 * @param p
 	 */
 	public void addProduct(Product p){
@@ -19,7 +19,7 @@ public class ProductManagement {
 	}
 	
 	/**
-	 * Õ¹Ê¾ÉÌÆ·Êı¾İ
+	 * å±•ç¤ºå•†å“æ•°æ®
 	 */
 	public void showProducts(){
 		for (int i = 0; i < this.pdts.size(); i++) {

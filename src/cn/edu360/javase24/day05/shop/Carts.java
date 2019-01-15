@@ -22,7 +22,7 @@ public class Carts {
 	
 	public void showProducts(){
 		for (Product product : products) {
-			System.out.println("商品ID:"+product.getProductId()+" 商品数量:"+product.getNum());
+			System.out.println("鍟嗗搧ID:"+product.getProductId()+" 鍟嗗搧鏁伴噺:"+product.getNum());
 		}
 	}
 	

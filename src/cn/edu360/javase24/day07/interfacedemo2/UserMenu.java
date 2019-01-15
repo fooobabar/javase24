@@ -8,7 +8,7 @@ public class UserMenu {
 		Scanner sc = new Scanner(System.in);
 		
 		boolean flag = true;
-		System.out.println("1. µÇÂ¼; 2. ×¢²á; 3. ÍË³ö");
+		System.out.println("1. ç™»å½•; 2. æ³¨å†Œ; 3. é€€å‡º");
 		
 		while(flag){
 
@@ -31,40 +31,40 @@ public class UserMenu {
 		}
 
 	public static void registMethod(Scanner sc, UserService userManage) {
-		System.out.println("ÇëÊäÈëÓÃ»§Ãû£º");
+		System.out.println("è¯·è¾“å…¥ç”¨æˆ·åï¼š");
 		String name = sc.nextLine();
-		System.out.println("ÇëÊäÈëÃÜÂë£º");
+		System.out.println("è¯·è¾“å…¥å¯†ç ï¼š");
 		String pwd1 = sc.nextLine();
-		System.out.println("ÇëÔÙÊäÈëÃÜÂë£º");
+		System.out.println("è¯·å†è¾“å…¥å¯†ç ï¼š");
 		String pwd2 = sc.nextLine();
 		
 		String res = userManage.regist(name, pwd1, pwd2);
 
 		switch(res){
 		case "1":
-			System.out.println("Á½´ÎÃÜÂë²»ÏàÍ¬");
+			System.out.println("ä¸¤æ¬¡å¯†ç ä¸ç›¸åŒ");
 			break;
 		case "2":
-			System.out.println("ÕËºÅ±»×¢²á¹ıÁË");
+			System.out.println("è´¦å·è¢«æ³¨å†Œè¿‡äº†");
 			break;
 		case "3":
-			System.out.println("ÄãÒÔºó¾ÍÊÇÎÒµÄÈËÁË");
+			System.out.println("ä½ ä»¥åå°±æ˜¯æˆ‘çš„äººäº†");
 			break;
 		}
 	}
 
 	public static void loginMethod(Scanner sc, UserService userManage) {
-		System.out.println("ÇëÊäÈëÕËºÅ£º");
+		System.out.println("è¯·è¾“å…¥è´¦å·ï¼š");
 		String username = sc.nextLine();
-		System.out.println("ÇëÊäÈëÃÜÂë£º");
+		System.out.println("è¯·è¾“å…¥å¯†ç ï¼š");
 		String pwd = sc.nextLine();
 		
 		boolean login = userManage.login(username, pwd);
 		
 		if (login){
-			System.out.println("¹§Ï²Äú£¬µÇÂ¼³É¹¦");
+			System.out.println("æ­å–œæ‚¨ï¼Œç™»å½•æˆåŠŸ");
 		}else{
-			System.out.println("±§Ç¸£¬ÄúµÄÓÃ»§ÃûÃÜÂë²»ÕıÈ·");
+			System.out.println("æŠ±æ­‰ï¼Œæ‚¨çš„ç”¨æˆ·åå¯†ç ä¸æ­£ç¡®");
 		}
 	} 
 }

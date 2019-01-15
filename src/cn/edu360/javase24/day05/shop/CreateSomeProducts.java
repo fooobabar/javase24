@@ -6,18 +6,18 @@ public class CreateSomeProducts{
 		Product p1 = new Product();
 		p1.setNum(5);
 		p1.setProductId("pdt1");
-		p1.setProductName("·ÊÔí");
+		p1.setProductName("è‚¥çš‚");
 		p1.setPrice(2);
 		
 		Product p2 = new Product();
 		p2.setNum(5);
 		p2.setProductId("pdt2");
-		p2.setProductName("ÏãÔí");
+		p2.setProductName("é¦™çš‚");
 		p2.setPrice(2);
-		Product p3 = new Product("pdt3","»¤ÀíÒº",20.8f,0);
-		Product p4 = new Product("pdt4","ÌêĞëµ¶",10.8f,0);
-		Product p5 = new Product("pdt5","·ÀÉ¹Ëª",25.8f,0);
-		Product p6 = new Product("pdt6","Ï´ÃæÄÌ",28.8f,0);
+		Product p3 = new Product("pdt3","æŠ¤ç†æ¶²",20.8f,0);
+		Product p4 = new Product("pdt4","å‰ƒé¡»åˆ€",10.8f,0);
+		Product p5 = new Product("pdt5","é˜²æ™’éœœ",25.8f,0);
+		Product p6 = new Product("pdt6","æ´—é¢å¥¶",28.8f,0);
 		
 		pmgmt.addProduct(p1);
 		pmgmt.addProduct(p2);

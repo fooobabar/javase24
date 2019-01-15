@@ -7,10 +7,10 @@ import java.util.HashSet;
 public class UserTestDemo {
 
 	public static void main(String[] args) {
-		User u1 = new User("1","小明","123456","0101234",25,18000f);
-		User u2 = new User("2","小华","123456","0101234",26,28000f);
-		User u3 = new User("3","小强","123456","0101234",27,38000f);
-		User u4 = new User("4","小红","123456","0101234",28,48000f);
+		User u1 = new User("1","灏忔槑","123456","0101234",25,18000f);
+		User u2 = new User("2","灏忓崕","123456","0101234",26,28000f);
+		User u3 = new User("3","灏忓己","123456","0101234",27,38000f);
+		User u4 = new User("4","灏忕孩","123456","0101234",28,48000f);
 
 		User[] userArray=new User[]{u1,u2,u3,u4};
 		

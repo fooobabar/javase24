@@ -3,7 +3,7 @@ package cn.edu360.javase24.day05.shop;
 import java.util.Scanner;
 
 /**
- * ÊÛ»õÏµÍ³µÄÈë¿Ú³ÌĞò
+ * å”®è´§ç³»ç»Ÿçš„å…¥å£ç¨‹åº
  *
  */
 public class ShopMenu {
@@ -12,14 +12,14 @@ public class ShopMenu {
 		CreateSomeProducts.create(pmgmt);
 		Carts carts = new Carts();
 		
-		System.out.println("»¶Ó­À´µ½Ğ¡Å£ÉÌ³Ç£¬ÇëÑ¡ÔñÄúÒª½øĞĞµÄ²Ù×÷");
+		System.out.println("æ¬¢è¿æ¥åˆ°å°ç‰›å•†åŸï¼Œè¯·é€‰æ‹©æ‚¨è¦è¿›è¡Œçš„æ“ä½œ");
 		
 		Scanner scanner = new Scanner(System.in);
 		Scanner s = new Scanner(System.in);
 		String command ="";
 		boolean flag = true;
 		while(flag){
-			System.out.println("1.ä¯ÀÀÉÌÆ·£»2.¹ºÎï£»3.²é¿´¹ºÎï³µ£»4.ĞŞ¸Ä¹ºÎï³µ£»5.Ìá½»¶©µ¥£»6.¸¶¿î£»7.ÍË³ö");
+			System.out.println("1.æµè§ˆå•†å“ï¼›2.è´­ç‰©ï¼›3.æŸ¥çœ‹è´­ç‰©è½¦ï¼›4.ä¿®æ”¹è´­ç‰©è½¦ï¼›5.æäº¤è®¢å•ï¼›6.ä»˜æ¬¾ï¼›7.é€€å‡º");
 			command = scanner.nextLine();
 			
 			switch(command){
@@ -27,8 +27,8 @@ public class ShopMenu {
 				pmgmt.showProducts();
 				break;
 			case "2":
-				System.out.println("ÇëÑ¡ÔñÄúÒª¹ºÂòµÄÉÌÆ·£¬ÉÌÆ·id:¸öÊı£¬¶à¸öÉÌÆ·ÓÃ¶ººÅ¸ô¿ª");
-				System.out.println("ÀıÈç£¬pdt1:2,pdt6:3");
+				System.out.println("è¯·é€‰æ‹©æ‚¨è¦è´­ä¹°çš„å•†å“ï¼Œå•†å“id:ä¸ªæ•°ï¼Œå¤šä¸ªå•†å“ç”¨é€—å·éš”å¼€");
+				System.out.println("ä¾‹å¦‚ï¼Œpdt1:2,pdt6:3");
 				String pdts = s.nextLine();
 				carts.setProducts(pdts,pmgmt);
 				s = new Scanner(System.in);
@@ -38,17 +38,17 @@ public class ShopMenu {
 				carts.showProducts();
 				break;
 			case "4":
-				System.out.println("ĞŞ¸Ä¹ºÎï³µ[d for delete,m for modify");
+				System.out.println("ä¿®æ”¹è´­ç‰©è½¦[d for delete,m for modify");
 				s = new Scanner(System.in);
 				break;
 			case "5":
-				System.out.println("Ìá½»¶©µ¥");
+				System.out.println("æäº¤è®¢å•");
 				break;
 			case "6":
-				System.out.println("¸¶¿î");
+				System.out.println("ä»˜æ¬¾");
 				break;
 			case "7":
-				System.out.println("»¶Ó­ÏÂ´Î¹âÁÙ");
+				System.out.println("æ¬¢è¿ä¸‹æ¬¡å…‰ä¸´");
 				flag = false;
 				break;
 			default:

@@ -1,35 +1,35 @@
 package cn.edu360.javase24.day07.construct;
 
 /*
- * new Ò»¸ö¶ÔÏóµÄÖ´ĞĞË³Ğò£º
- * 1. ¾²Ì¬´úÂë¿é£¬°üÀ¨¾²Ì¬³ÉÔ±£»¶à¸öÔò´ÓÉÏÍùÏÂË³ĞòÖ´ĞĞ
- * 2. ÆÕÍ¨³õÊ¼»¯´úÂë¿é£¬¶à¸öÔò´ÓÉÏÍùÏÂË³ĞòÖ´ĞĞ
- * 3. ¹¹Ôì·½·¨
+ * new ä¸€ä¸ªå¯¹è±¡çš„æ‰§è¡Œé¡ºåºï¼š
+ * 1. é™æ€ä»£ç å—ï¼ŒåŒ…æ‹¬é™æ€æˆå‘˜ï¼›å¤šä¸ªåˆ™ä»ä¸Šå¾€ä¸‹é¡ºåºæ‰§è¡Œ
+ * 2. æ™®é€šåˆå§‹åŒ–ä»£ç å—ï¼Œå¤šä¸ªåˆ™ä»ä¸Šå¾€ä¸‹é¡ºåºæ‰§è¡Œ
+ * 3. æ„é€ æ–¹æ³•
  */
 public class OrderDatabase {
 	
 	public static String orderVersion = "500";
-	//³õÊ¼»¯¿é
+	//åˆå§‹åŒ–å—
 	{
-		System.out.println("³õÊ¼»¯¿éÔËĞĞÁË....");
-		System.out.println("³õÊ¼»¯¿éÔËĞĞÖ®Ç°£¬orderVersion"+orderVersion);
+		System.out.println("åˆå§‹åŒ–å—è¿è¡Œäº†....");
+		System.out.println("åˆå§‹åŒ–å—è¿è¡Œä¹‹å‰ï¼ŒorderVersion"+orderVersion);
 		orderVersion="1500";
-		System.out.println("³õÊ¼»¯¿éÔËĞĞÖ®Ç°£¬orderVersion"+orderVersion);
+		System.out.println("åˆå§‹åŒ–å—è¿è¡Œä¹‹å‰ï¼ŒorderVersion"+orderVersion);
 		
 	}
-	//¾²Ì¬´úÂë¿é
+	//é™æ€ä»£ç å—
 	static{
-		System.out.println("¾²Ì¬´úÂë¿éÔËĞĞÁË....");
-		System.out.println("¾²Ì¬´úÂë¿éÔËĞĞÖ®Ç°£¬orderVersion"+orderVersion);
+		System.out.println("é™æ€ä»£ç å—è¿è¡Œäº†....");
+		System.out.println("é™æ€ä»£ç å—è¿è¡Œä¹‹å‰ï¼ŒorderVersion"+orderVersion);
 		orderVersion="1000";
-		System.out.println("¾²Ì¬´úÂë¿éÔËĞĞÖ®Ç°£¬orderVersion"+orderVersion);
+		System.out.println("é™æ€ä»£ç å—è¿è¡Œä¹‹å‰ï¼ŒorderVersion"+orderVersion);
 	}
-	//ÎŞ²ÎÊı¹¹Ôì
+	//æ— å‚æ•°æ„é€ 
 	public OrderDatabase(){
-		System.out.println("¿Õ²Î¹¹Ôìº¯ÊıÔËĞĞÁË....");
+		System.out.println("ç©ºå‚æ„é€ å‡½æ•°è¿è¡Œäº†....");
 
-		System.out.println("¿Õ²Î¹¹Ôìº¯ÊıÔËĞĞÖ®Ç°£¬orderVersion"+orderVersion);
+		System.out.println("ç©ºå‚æ„é€ å‡½æ•°è¿è¡Œä¹‹å‰ï¼ŒorderVersion"+orderVersion);
 		orderVersion="2000";
-		System.out.println("¿Õ²Î¹¹Ôìº¯ÊıÔËĞĞÖ®Ç°£¬orderVersion"+orderVersion);
+		System.out.println("ç©ºå‚æ„é€ å‡½æ•°è¿è¡Œä¹‹å‰ï¼ŒorderVersion"+orderVersion);
 	}
 }

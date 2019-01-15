@@ -8,11 +8,11 @@ public class UserTest {
 
 	public static void main(String[] args) {
 
-		User u1 = new User("1","ÕÅÈı",18,2000f);
-		User u2 = new User("2","ÀîËÄ",20,3000f);
-		User u3 = new User("3","ÍõÎå",19,2500f);
-		User u4 = new User("4","ÕÔÁù",19,3600f);
-		User u5 = new User("5","Ìúµ°",20,2800f);
+		User u1 = new User("1","å¼ ä¸‰",18,2000f);
+		User u2 = new User("2","æå››",20,3000f);
+		User u3 = new User("3","ç‹äº”",19,2500f);
+		User u4 = new User("4","èµµå…­",19,3600f);
+		User u5 = new User("5","é“è›‹",20,2800f);
 		
 		ArrayList<User> arrayList=new ArrayList<>();
 		arrayList.add(u1);
@@ -50,8 +50,8 @@ public class UserTest {
 
 	public static void orderBy3(ArrayList<User> arrayList) {
 		User tmpUser;
-		//¶ÔÉÏÊöArrayListÖĞµÄuser¶ÔÏó½øĞĞÅÅĞò
-		//£¨ÅÅĞòµÄ¹æÔòÎª£º ÏÈ±È½Ïage£¬ageĞ¡µÄÅÅÇ°Ãæ; Èç¹ûageÏàµÈ,Ôò±È½Ïsalary£¬salaryĞ¡µÄÅÅÇ°Ãæ£©
+		//å¯¹ä¸Šè¿°ArrayListä¸­çš„userå¯¹è±¡è¿›è¡Œæ’åº
+		//ï¼ˆæ’åºçš„è§„åˆ™ä¸ºï¼š å…ˆæ¯”è¾ƒageï¼Œageå°çš„æ’å‰é¢; å¦‚æœageç›¸ç­‰,åˆ™æ¯”è¾ƒsalaryï¼Œsalaryå°çš„æ’å‰é¢ï¼‰
 		for(int i=0 ;i<arrayList.size();i++){
 			for(int j=i;j<arrayList.size();j++){
 				if(arrayList.get(i).getAge() > arrayList.get(j).getAge()){
@@ -76,7 +76,7 @@ public class UserTest {
 
 	public static void orderBy2(ArrayList<User> arrayList) {
 		User tmpUser;
-		//¶ÔÉÏÊöArrayListÖĞµÄuser¶ÔÏó½øĞĞÅÅĞò£¨ÅÅĞò¹æÔòÎª£ºsalaryĞ¡µÄÅÅÇ°Ãæ£©
+		//å¯¹ä¸Šè¿°ArrayListä¸­çš„userå¯¹è±¡è¿›è¡Œæ’åºï¼ˆæ’åºè§„åˆ™ä¸ºï¼šsalaryå°çš„æ’å‰é¢ï¼‰
 		for(int i=0 ;i<arrayList.size();i++){
 			for(int j=i;j<arrayList.size();j++){
 				if(arrayList.get(i).getSalary() > arrayList.get(j).getSalary()){
@@ -93,7 +93,7 @@ public class UserTest {
 
 	public static void orderBy1(ArrayList<User> arrayList) {
 		User tmpUser;
-		//¶ÔÉÏÊöArrayListÖĞµÄuser¶ÔÏó½øĞĞÅÅĞò£¨ÅÅĞò¹æÔòÎª£ºage´óµÄÅÅÇ°Ãæ£©
+		//å¯¹ä¸Šè¿°ArrayListä¸­çš„userå¯¹è±¡è¿›è¡Œæ’åºï¼ˆæ’åºè§„åˆ™ä¸ºï¼šageå¤§çš„æ’å‰é¢ï¼‰
 		for(int i=0 ;i<arrayList.size();i++){
 			for(int j=i;j<arrayList.size();j++){
 				if(arrayList.get(i).getAge() < arrayList.get(j).getAge()){
