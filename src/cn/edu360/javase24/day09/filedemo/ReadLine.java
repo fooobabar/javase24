@@ -2,7 +2,7 @@ package cn.edu360.javase24.day09.filedemo;
 
 import java.io.FileInputStream;
 /*
- * °´ÐÐ¶ÁÈ¡
+ * ï¿½ï¿½ï¿½Ð¶ï¿½È¡
  */
 public class ReadLine {
 
