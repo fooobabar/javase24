@@ -12,17 +12,28 @@ public class Test {
 
 	public static void main(String[] args) {
 		ArrayList<User> ulist = new ArrayList<>();
+<<<<<<< HEAD
 		User u1 = new User("u1", "å«¦å¨¥", 18, 1000.0f);
 		User u2 = new User("u2", "å´åˆš", 18, 1200.0f);
 		User u3 = new User("u3", "çŽ‰å…”", 28, 1500.0f);
 		User u4 = new User("u4", "å…«æˆ’", 8, 1200.0f);
+=======
+		User u1 = new User("u1", "æÏ¶ð", 18, 1000.0f);
+		User u2 = new User("u2", "Îâ¸Õ", 18, 1200.0f);
+		User u3 = new User("u3", "ÓñÍÃ", 28, 1500.0f);
+		User u4 = new User("u4", "°Ë½ä", 8, 1200.0f);
+>>>>>>> cf78b86467588a8347c38ed7f658da34fc2c8417
 		
 		ulist.add(u1);
 		ulist.add(u2);
 		ulist.add(u3);
 		ulist.add(u4);
 		
+<<<<<<< HEAD
 		//æž„é€ æŽ’åºå·¥å…·
+=======
+		//¹¹ÔìÅÅÐò¹¤¾ß
+>>>>>>> cf78b86467588a8347c38ed7f658da34fc2c8417
 		SortUtil<User> sortUtil1= new SortUtil<>();
 		
 		sortUtil1.sort(ulist, new AgeBijiaoQi());
