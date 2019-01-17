@@ -1,15 +1,4 @@
 package cn.edu360.javase24.day09.filedemo;
-
-<<<<<<< HEAD
-public class ReadLine {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
-}
-=======
 import java.io.FileInputStream;
 /*
  * ���ж�ȡ
@@ -32,5 +21,4 @@ public class ReadLine {
 		System.out.println(new String(buf,0,i)); 
 	}
 
-}
->>>>>>> cf78b86467588a8347c38ed7f658da34fc2c8417
+} 
