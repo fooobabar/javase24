@@ -1,0 +1,5 @@
+MySQL My Linux MySQL MSSQL Linux MSSQL
+Oracle HADOOP HADOOP orcl orcl xe rac Linux
+GBASE orcl GBASE GP
+MySQL
+HADOOP 

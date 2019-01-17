@@ -1,7 +1,7 @@
 package cn.edu360.javase24.day09.filedemo;
 import java.io.FileInputStream;
 /*
- * ���ж�ȡ
+ * 读取一行数据
  */
 public class ReadLine {
 
