@@ -9,21 +9,28 @@ import java.util.Set;
 public class WordCount {
 
 	public static void main(String[] args) throws Exception {
-		//String line="a  b  c d e     f";
-//		String[] lines = line.split(" ");
-//		System.out.println(Arrays.toString(lines));
 
+		//创建BufferedReader，按行读取文件
 		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("wordcount.txt")));
 		
 		String line;
+		
+		//存储单词出现次数
 		HashMap<String, Integer> wordcount=new HashMap<>();
 		
+		//循环文件中的内容，按行处理
 		while((line=br.readLine())!=null){
+
+			//按照空格拆分成数组
 			String[] lines = line.split(" ");
 			for (int i = 0; i < lines.length; i++) {
+				
+				//过滤掉多个空格
 				if(lines[i].length()!=0){
 					String str=lines[i];
 					int cnt =1;
+					
+					//如果单词已经存在，则增加单词出现次数
 					if(wordcount.containsKey(str)){
 						cnt=wordcount.get(str);
 						wordcount.remove(str);
