@@ -1,4 +1,4 @@
-package cn.edu360.javase24.day10.excersize01;
+package cn.edu360.javase24.day10.exercise01;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
