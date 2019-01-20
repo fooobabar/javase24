@@ -52,3 +52,19 @@ try{
 
 抛出异常
 throws Exception
+
+## 5 继承
+子类继承父类，就拥有父类的方法，也可以重写父类方法。
+父类的抽象类，子类必须实现。
+
+
+## 6 抽象类
+抽象类一般用来作为一个父类，但是里面可以有方法是抽象的，以让子类来实现
+
+## 7 反射
+
+```Java
+String classname = "com.doit.pojo.Person";
+Class<?> forName = Class.forName(classname);
+Person o = (Person)forName.newInstance();
+```
