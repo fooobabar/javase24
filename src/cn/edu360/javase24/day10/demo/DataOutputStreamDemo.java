@@ -11,7 +11,7 @@ import java.io.FileOutputStream;
 public class DataOutputStreamDemo {
 
 	public static void main(String[] args) throws Exception {
-		DataOutputStream dos = new DataOutputStream(new FileOutputStream("dataoutputstreamdemo.txt"));
+		DataOutputStream dos = new DataOutputStream(new FileOutputStream("day10file/dataoutputstreamdemo.txt"));
 		int a = 1688;
 		dos.writeInt(a);  //文本文件看是乱码
 		

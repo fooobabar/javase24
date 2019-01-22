@@ -13,7 +13,7 @@ import java.io.ObjectOutputStream;
 public class ObjectOutputStreamDemo {
 
 	public static void main(String[] args) throws Exception {
-		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("objectoutput.dat"));
+		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("day10file/objectoutput.dat"));
 
 		User user = new User("慕容复",38,2000f,80000);
 

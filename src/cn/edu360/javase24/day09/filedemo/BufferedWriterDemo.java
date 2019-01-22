@@ -12,12 +12,12 @@ public class BufferedWriterDemo {
 
 	public static void main(String[] args) throws Exception {
 
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("x.y"),"UTF-8"));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("day09file/x.y"),"UTF-8"));
 		
 		bw.write("我爱你，祖国");
 		bw.close();
 		
-		BufferedWriter bw2 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("z.txt",true),"UTF-8"));
+		BufferedWriter bw2 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("day09file/z.txt",true),"UTF-8"));
 		bw2.write(13);
 		bw2.write(10);
 		

@@ -12,7 +12,7 @@ public class BufferedReaderDemo {
 
 	public static void main(String[] args) throws Exception {
 		//InputStreamReader 可以传入字符集类型
-		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("c_gbk.txt"),"GBK"));
+		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("day09file/c_gbk.txt"),"GBK"));
 		
 		String line=br.readLine();
 		System.out.println(line);

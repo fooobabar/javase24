@@ -11,7 +11,7 @@ public class WordCount {
 	public static void main(String[] args) throws Exception {
 
 		//创建BufferedReader，按行读取文件
-		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("wordcount.txt")));
+		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("day09file/wordcount.txt")));
 		
 		String line;
 		

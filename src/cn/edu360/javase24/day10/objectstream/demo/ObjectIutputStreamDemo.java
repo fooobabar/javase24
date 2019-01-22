@@ -9,7 +9,7 @@ public class ObjectIutputStreamDemo {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 
-		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("objectoutput.dat"));
+		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("day10file/objectoutput.dat"));
 
 		User u2 = (User) ois.readObject();
 

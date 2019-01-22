@@ -28,13 +28,13 @@ public class FuzaObjectSerDe {
 		uList.add(user1);
 		uList.add(user2);
 		
-		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("objectoutput2.dat"));
+		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("day10file/objectoutput2.dat"));
 		oos.writeObject(uList);
 		oos.close();
 		
 		//从文件中读取一个list对象
 		
-		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("objectoutput2.dat"));
+		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("day10file/objectoutput2.dat"));
 		ArrayList<User> userlist = (ArrayList<User>) ois.readObject();
 		System.out.println(userlist);
 	}
@@ -54,11 +54,11 @@ public class FuzaObjectSerDe {
 		userMap.put(user1.getName(), user1);
 		userMap.put(user2.getName(), user2);
 		
-		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("objectoutputstream.dat"));
+		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("day10file/objectoutputstream.dat"));
 		oos.writeObject(userMap);
 		oos.close();
 		
-		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("objectoutputstream.dat"));
+		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("day10file/objectoutputstream.dat"));
 		HashMap<String, User> userMap2= (HashMap<String, User>) ois.readObject();
 		ois.close();
 		
@@ -80,12 +80,12 @@ public class FuzaObjectSerDe {
 		friends.add("乔峰");
 		user1.setFriends(friends);
 		
-		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("objectoutputstream5.dat"));
+		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("day10file/objectoutputstream5.dat"));
 		oos.writeObject(user1);
 		
 		oos.close();
 		
-		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("objectoutputstream5.dat"));
+		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("day10file/objectoutputstream5.dat"));
 		
 		User user = (User) ois.readObject();
 		ois.close();

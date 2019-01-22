@@ -15,7 +15,7 @@ public class ProductDaoImpl implements ProductDao {
 
 	@Override
 	public void addProduct(String p) throws Exception {
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("product.txt", true),"utf-8"));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("day09file/product.txt", true),"utf-8"));
 	    bw.write(p);
 	    bw.write("\r\n");
 	    bw.close();
@@ -23,7 +23,7 @@ public class ProductDaoImpl implements ProductDao {
 
 	@Override
 	public ArrayList<Product> getAllProducts() throws Exception {
-		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("product.txt"),"utf-8"));
+		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("day09file/product.txt"),"utf-8"));
 		
 		ArrayList<Product> pList=new ArrayList<>();
 		

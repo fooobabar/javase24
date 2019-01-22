@@ -7,7 +7,7 @@ public class FileOutputStreamDemo {
 
 	public static void main(String[] args) throws Exception {
 		//覆盖写文件
-		FileOutputStream fos = new FileOutputStream("xx.oo");
+		FileOutputStream fos = new FileOutputStream("day09file/xx.oo");
 		String s = "你好";
 		byte[] bytes = s.getBytes("UTF-8");
 		fos.write(bytes);
@@ -15,7 +15,7 @@ public class FileOutputStreamDemo {
 		fos.close();
 
 		//往一个文件中追加数据
-		FileOutputStream fos2 = new FileOutputStream("xx.oo",true);
+		FileOutputStream fos2 = new FileOutputStream("day09file/xx.oo",true);
 		
 		s = ",傻逼";
 		byte[] bytes2 = s.getBytes("UTF-8");

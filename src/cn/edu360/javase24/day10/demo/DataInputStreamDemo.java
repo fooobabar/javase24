@@ -12,7 +12,7 @@ import java.io.FileNotFoundException;
 public class DataInputStreamDemo {
 
 	public static void main(String[] args) throws Exception {
-		DataInputStream dis = new DataInputStream(new FileInputStream("dataoutputstreamdemo.txt"));
+		DataInputStream dis = new DataInputStream(new FileInputStream("day10file/dataoutputstreamdemo.txt"));
 		
 		int age = dis.readInt();
 		System.out.println(age);

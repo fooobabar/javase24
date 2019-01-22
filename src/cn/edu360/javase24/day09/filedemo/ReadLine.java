@@ -6,7 +6,7 @@ import java.io.FileInputStream;
 public class ReadLine {
 
 	public static void main(String[] args) throws Exception {
-		FileInputStream fis = new FileInputStream("a.txt");
+		FileInputStream fis = new FileInputStream("day09file/a.txt");
 		
 		byte[] buf = new byte[1024];
 		int num=0;
