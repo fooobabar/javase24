@@ -1,6 +1,12 @@
 package cn.edu360.javase24.day09.filedemo;
 
 import java.io.File;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.zip.DataFormatException;
+
+import org.junit.Test;
 
 public class FileDemo {
 
@@ -17,6 +23,19 @@ public class FileDemo {
 			System.out.println("not null");
 		}else {
 			System.out.println("null");
+		}
+	}
+	
+	@Test
+	public void listFilesTest(){
+		File f = new File("f:/");
+		File[] listFiles = f.listFiles();
+
+		for (int i = 0; i < listFiles.length; i++) {
+			Date date = new Date(listFiles[i].lastModified());
+			DateFormat dfmt = new SimpleDateFormat("yyyyMMddHHmmssSSS");
+			
+			System.out.println(listFiles[i].getName() + ":" +dfmt.format(date));
 		}
 	}
 
